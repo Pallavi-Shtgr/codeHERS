@@ -1,0 +1,104 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.image {
+    margin-top: 60px;
+    background-image: url('./images/blood3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.nav {
+    position: fixed;
+    color:rgb(206, 53, 53);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.nav .head {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-right: 20px;
+    justify-content:space-around;
+    align-items: center;
+    font-size: larger;
+}
+
+.nav .content a {
+    text-decoration: none;
+    color: rgb(206, 53, 53);
+    font-size: larger;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.image p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    /* background-color: rgb(211, 45, 45); */
+    padding: 10px;
+    position: relative;
+    top: 65%;
+}
+.head1{
+    font-size:xx-large;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.buttons{
+    position: relative;
+    display: flex;
+    top: 65%;
+    justify-content: center;
+
+}
+.button{
+    background-color: rgb(206, 53, 53);
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    font-size: larger;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    background-color: rgb(230, 14, 14);
+}
+.footer {
+    background-color:rgb(206, 53, 53);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}

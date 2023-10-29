@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood group Info</title>
+</head>
+
+<style>
+    .box-container{
+        margin: 20px;
+    }
+    .box{
+        height :450px;
+        width:40%;
+        border: 2px solid black;
+        background-image: url(first/images/bloodtype.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 12px;
+        box-shadow: 2px 2px 5px 2px gray;
+    }
+    .boxes{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .head1{
+        font-size: 40px;
+        text-align: center;
+        background-color: rgb(196, 99, 99);
+        color: white;
+        padding: 20px;
+        margin: 10px;
+    }
+    .bld{
+        font-size: 100px;
+        text-align: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 45%;
+        right: 4%;
+        font-weight: bolder;
+    }
+    .boxdetail{
+        background-color: pink;
+        padding: 2rem;
+        margin: 1rem;
+        font-size: large;
+        display: none;
+    }
+    .footer {
+            background-color: rgb(206, 53, 53);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+</style>
+<body>
+    <div class="head">
+        <h1></h1>
+    </div>
+    <div class="box-container">
+        <div class="head1">group-A</div>
+        <div class="boxes">
+            <div class="box" onclick="display('boxdetail1')">
+               <div class="bld">A+</div>
+            </div>
+            <div class="box" onclick="display('boxdetail1')">
+                <div class="bld">A-</div>
+            </div> 
+        </div>
+        <div class="boxdetail" id="boxdetail1">
+<p>
+
+        Blood Group A:
+
+    Antigen on Red Blood Cells: Blood group A has the A antigen on the surface of its red blood cells.
+
+    Antibodies in Plasma: Blood group A individuals have antibodies against the B antigen in their plasma.
+<br>
+    Universal Donor: People with blood group A can donate red blood cells to individuals with blood groups A and AB. This means that they can donate to people who have the A antigen, which includes individuals with blood group A and AB.
+
+    Receiver from Blood Groups: Blood group A individuals can receive red blood cells from people with blood groups A and O. They can receive from individuals who have the A antigen, which includes those with blood groups A and AB, and from individuals with blood group O, as blood group O has neither A nor B antigens.
+
+    <br>
+Compatibility Chart:
+
+    Blood Group A can donate to: A and AB.
+    Blood Group A can receive from: A, O.
+
+
+    
+</p>        </div>
+        <div class="head1">group-B</div>
+        <div class="boxes">
+            <div class="box" onclick="display('boxdetail2')">
+                <div class="bld">B+</div>
+            </div>
+            <div class="box" onclick="display('boxdetail2')">
+                <div class="bld">B-</div>
+            </div>
+        </div>
+        <div class="boxdetail" id="boxdetail2">
+<p>
+
+        Donation to Blood Group B:
+        Blood group B individuals can donate blood to people with blood group B.
+
+    Donation to Blood Group AB:
+        Blood group B can donate to individuals with AB positive and AB negative blood types, as they can receive both B and A antigens.
+
+    Donation to Blood Group O:
+        Blood group B individuals can donate to people with O positive and O negative blood types, as O individuals can receive both A and B antigens.
+
+    Donation to Blood Group A:
+        Blood group B can donate to people with A positive and A negative blood types,
+<br>
+    Reception from Blood Group B:
+        Blood group B individuals can receive blood from people with blood group B. They can receive both B positive and B negative blood types.
+
+    Reception from Blood Group AB:
+        Blood group B individuals can receive blood from individuals with AB positive and AB negative blood types, as they can donate to both B and A antigens.
+
+    Reception from Blood Group O:
+        Blood group B individuals can receive blood from people with O positive and O negative blood types. However, they cannot receive blood from O individuals with both A and B antibodies.
+
+    Reception from Blood Group A:
+        Blood group B individuals can receive blood from people with A positive and A negative blood types, but they must be cautious because of the presence of anti-B antibodies in their plasma.
+    
+</p>            </div>
+        <div class="head1">group-AB</div>
+        <div class="boxes">
+            <div class="box" onclick="display('boxdetail3')">
+                <div class="bld">AB+</div>
+            </div>
+            <div class="box" onclick="display('boxdetail3')">
+                <div class="bld">AB-</div></div>
+        </div>
+        <div class="boxdetail" id="boxdetail3">
+<p>
+
+        Antigens Present: Blood group AB has both A and B antigens on the surface of its red blood cells.
+
+Antibodies in Plasma: Individuals with blood group AB have no anti-A or anti-B antibodies in their plasma. This means they can receive blood from donors with A, B, AB, or O blood types without agglutination (clumping of red blood cells).
+
+<br>Universal Recipient: Blood group AB is often referred to as the "universal recipient" because individuals with this blood type can receive blood from any of the four main blood types (A, B, AB, and O). This flexibility makes it easier to find compatible blood for transfusions.
+    
+</p>        </div>
+        <div class="head1">group-O</div>
+        <div class="boxes">
+            <div class="box" onclick="display('boxdetail4')">
+                <div class="bld">O+</div>
+            </div>
+            <div class="box" onclick="display('boxdetail4')">
+                <div class="bld">O-</div>
+            </div>
+        </div>
+        <div class="boxdetail" id="boxdetail4">
+<p>
+
+        Antigens: Blood group O individuals have neither A nor B antigens on the surface of their red blood cells. They are sometimes referred to as "universal donors" for their ability to donate red blood cells to individuals with other blood types.
+
+        Antibodies: Blood group O individuals have both anti-A and anti-B antibodies in their plasma, which means they can only receive blood from other O blood group donors. This is because they may have a severe reaction if they receive blood with A or B antigens.
+    <br>
+        Compatible Donations:
+            Can Donate To: Blood group O individuals can donate red blood cells to recipients with any blood type (A, B, AB, or O).
+    
+        Compatible Receipt:
+            Can Receive From: Blood group O individuals can only receive red blood cells from other O blood group donors. They are compatible recipients with only O- blood, which lacks both A and B antigens and is considered the universal red cell 
+    
+</p>        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 CodeHERS. All rights reserved.</p>
+    </div>
+</body>
+<script>
+function display(item) {
+  var containers = document.getElementsByClassName('boxdetail');
+  for (var i = 0; i < containers.length; i++) {
+      var container = containers[i];
+
+          container.style.display = "none";
+          document.getElementById(item).style.display="block";
+  }
+}
+
+</script>
+</html>
